@@ -9,24 +9,38 @@
    
 </head>
 <body>
-<h1>formulario</h1>
-<form id="form">
-    <label for="name">nome</label>
+   <div>
+    <form id="form">
+        <h1>Cadastre-se </h1>
+        <p>
+            
+                Preencha os campos abaixo:
+          
+        </p>
+        <label for="name">Nome de usuario</label>
     <input type="text" id="name">
+<p>
 
-    <label for="email">email</label>
+</p>
+    <label for="email">Email</label>
     <input type="email" id="email">
 
+    <p>
+
+    </p>
+    <label for="teleInput">Telefone</label>
+    <input type="tele"  id="teleInput">
     
-        <label for="teleInput">Telefone</label>
-        <input type="tele"  id="teleInput">
-        
-        <p id="mensagem"></p>
-
-        <div class="botao">
-            <button id="actionButton" onclick="validarForm()">Cadastrar</button>
-
+    <p id="mensagem"></p>
+    
+    
 </form>
+<div class="botao">
+    <button id="actionButton" onclick="validarForm()">Enviar</button>
+</div>
+
+</div>
+
 <script src="script.js"></script>
 </body>
 </html>

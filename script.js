@@ -8,22 +8,27 @@ let actionButton = document.getElementById("actionButton")
 function validarForm() {
     if (!nameInput.value) {
 
-        alert("nome invalido")
-
+        mensagem.innerText = " Preencher campo do email ! "
+        menssagem.style.color = 'red'
         return;
     }
 
     else if (!emailInput.value) {
-        alert("email invalido")
+        mensagem.innerText = " Preencher campo do email ! "
+        mensagem.style.color = 'red'
         return;
     }
     else if (!teleInput.value) {
-        alert("numero invalido")
+        mensagem.innerText = " Preencher campo do telefone ! "
+        mensagem.style.color = 'red'
         return;
     }
 
 
-    alert("campos preencidos corretamente")
+   
+    mensagem.innerText = "Cadastro realizado com sucesso  "
+    mensagem.style.color = "green"
+   
 
 
 
